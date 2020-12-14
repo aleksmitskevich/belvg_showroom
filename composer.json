@@ -1,0 +1,22 @@
+{
+    "name": "belvg/showroom",
+    "version": "1.0.0",
+    "require": {
+        "../../../../vendor/magento/framework": ">=100.0.0",
+        "php": "~5.5.0|~5.6.0|>=7.0.0"
+    },
+    "type": "magento2-module",
+    "extra": [],
+    "autoload": {
+        "files": [
+          "registration.php"
+        ],
+        "psr-4": {
+            "BelVG\\Showroom\\": ""
+        }
+    },
+    "license": [
+        ""
+    ],
+    "description": ""
+}

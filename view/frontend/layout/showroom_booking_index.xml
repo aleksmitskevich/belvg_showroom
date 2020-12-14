@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<page layout="2columns-left" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <title>Showroom Booking</title>
+    </head>
+    <body>
+        <referenceBlock name="navigation.sections" remove="true" />
+        <referenceContainer name="content">
+            <block class="BelVG\Showroom\Block\Booking" name="showroom_booking" template="BelVG_Showroom::showroom/booking/form.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

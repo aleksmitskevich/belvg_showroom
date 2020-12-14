@@ -1,0 +1,15 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="showroom_booking_listing_data_source" xsi:type="string">BelVG\Showroom\Model\ResourceModel\Booking\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="BelVG\Showroom\Model\ResourceModel\Booking\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">belvg_booking_showroom</argument>
+            <argument name="resourceModel" xsi:type="string">BelVG\Showroom\Model\ResourceModel\Booking</argument>
+        </arguments>
+    </virtualType>
+</config>
